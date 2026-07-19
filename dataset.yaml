@@ -1,0 +1,27 @@
+# Dataset config for Human-Posture-CV
+#
+# NOTE: The source annotations only contain a single real object class
+# (a person/head detection box per instance) despite the repo's original
+# "posture" framing -- there is no standing/sitting/sleeping label in the
+# ground truth. This config reflects the actual data: single-class
+# detection. If you later add real posture labels, update `names` and
+# re-run utils/convert_coco_to_yolo.py with a real category mapping.
+
+path: .                 # dataset root (repo root)
+train: images/train     # train images
+val: images/valid       # validation images
+test: images/test       # test images
+
+names:
+  0: person
+
+# Ultralytics finds each image's label file by swapping the LAST "images"
+# path segment for "labels", so label .txt files must live in a sibling
+# "labels" tree, not inside images/train itself:
+#
+#   images/train/<*.jpg>   <->  labels/train/<*.txt>
+#   images/valid/<*.jpg>   <->  labels/valid/<*.txt>
+#   images/test/<*.jpg>    <->  labels/test/<*.txt>
+#
+# utils/convert_coco_to_yolo.py's --out argument should point at these
+# labels/<split> directories (see README for the exact commands).

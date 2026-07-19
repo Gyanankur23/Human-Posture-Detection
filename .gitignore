@@ -1,0 +1,39 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model files (large)
+*.pt
+*.onnx
+!runs/train/exp/weights/best.onnx
+
+# Training artifacts
+runs/*/train/*/weights/*.pt
+runs/*/train/*/weights/*.except
+!runs/train/exp/weights/best.onnx
+
+# Logs
+*.log
+
+# Streamlit
+.streamlit/config.toml
