@@ -1,15 +1,15 @@
-# 🚀 AI Human Posture Detection System
+# 🚀 Human Posture Detection System
 
 <div align="center">
 
-**Advanced Computer Vision Pipeline for Human Detection & Posture Classification**
+**Custom Computer Vision Pipeline for Human Detection & Posture Classification**
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.com/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.8%2B-green)](https://opencv.org/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Latest-orange)](https://github.com/ultralytics/ultralytics)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
-*Real-time person detection with intelligent posture analysis using state-of-the-art deep learning*
+*Real-time person detection with intelligent posture analysis using custom trained deep learning model*
 
 </div>
 
